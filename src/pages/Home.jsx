@@ -13,7 +13,8 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/posts', {
+        const response = await fetch('https://capstone-diary-backend.onrender.com/api/posts', {
+        // const response = await fetch('http://localhost:3000/api/posts', {
           headers: {
             'Authorization': `Bearer ${user.token}`
           }

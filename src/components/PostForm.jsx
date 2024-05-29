@@ -21,8 +21,8 @@ const PostForm = () => {
     }
 
     const post = { date, title, content };
-
-    const response = await fetch("http://localhost:3000/api/posts", {
+    const response = await fetch("https://capstone-diary-backend.onrender.com/api/posts", {
+    // const response = await fetch("http://localhost:3000/api/posts", {
       method: 'POST',
       body: JSON.stringify(post),
       headers: {

@@ -13,7 +13,8 @@ const PostDetails = ({ post }) => {
       return;
     }
     const response = await fetch(
-      "http://localhost:3000/api/posts/" + post._id,
+      "https://capstone-diary-backend.onrender.com/api/posts/" + post._id,
+      // "http://localhost:3000/api/posts/" + post._id,
       {
         method: "DELETE",
         headers: {
